@@ -13,7 +13,7 @@ The project demonstrates structured data processing, advanced filtering, and tim
 
 **Internship Title:** Learn to Build Real-Time Google Play Store Data Analytics using Python <br>
 **Start Date:** 21 November 2025 <br>
-**Completion Status:** ✅ 100% Completed <br>
+**Completion Status:** 100% Completed <br>
 **Tasks Completed:** 6 / 6 <br>
 
 This internship focused on building a real-time analytics dashboard by applying data cleaning, visualization, and advanced filtering techniques on Google Play Store datasets.
@@ -215,10 +215,11 @@ Each visualization is displayed only during specific time windows:
 
 ---
 
-## 🔗 Live Links
+## 🔗 Live Project Links
 
 🌐 Live Dashboard:
-(Add your link here)
+https://irfana-ofl.github.io/Google-Playstore-Analytics-Dashboard/
 
 📂 GitHub Repository:
-(Add your repo link here)
+https://github.com/Irfana-ofl/Google-Playstore-Analytics-Dashboard.git
+
