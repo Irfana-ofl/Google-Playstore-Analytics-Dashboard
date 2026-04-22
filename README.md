@@ -12,7 +12,7 @@ The project demonstrates structured data processing, advanced filtering, and tim
 ## 📌 Internship Overview
 
 **Internship Title:** Learn to Build Real-Time Google Play Store Data Analytics using Python <br>
-**Start Date:** 21 November 2025 <br>
+**Duration:** 1 Month (21 Nov 2025 – 25 Dec 2025) <br>
 **Completion Status:** 100% Completed <br>
 **Tasks Completed:** 6 / 6 <br>
 
