@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google Play Store Reviews Analytics</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,#2D1E2F,#4E2A4F);
+    color:white;
+}
+
+/* HEADER */
+.header{
+    position:fixed;
+    justify-content:space-between;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    z-index:1000;
+    background: linear-gradient(90deg,#2D1E2F,#4E2A4F);
+    box-shadow:0 6px 20px rgba(0,0,0,0.6);
+}
+
+.header-inner{
+    max-width:1400px;
+    margin:0 auto;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+
+
+/* GOOGLE LOGO */
+.google-logo{
+    position:absolute;
+    left:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.google-logo span{
+    margin-right:2px;
+}
+
+.google-logo span:nth-child(1){color:#4285F4;}
+.google-logo span:nth-child(2){color:#EA4335;}
+.google-logo span:nth-child(3){color:#FBBC05;}
+.google-logo span:nth-child(4){color:#4285F4;}
+.google-logo span:nth-child(5){color:#34A853;}
+.google-logo span:nth-child(6){color:#EA4335;}
+
+
+
+
+.title{
+    font-size:28px;
+    font-weight:600;
+    text-align:center;
+}
+
+.play{
+    position:absolute;
+    right:23px;
+}
+.play img{
+    height:42px;
+}
+
+/* DASHBOARD GRID */
+.container{
+    padding:120px 30px 40px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
+}
+
+/* KPI CARDS */
+.card{
+    padding:18px;
+    border-radius:22px;
+    box-shadow:0 16px 32px rgba(0,0,0,0.45);
+    transition:box-shadow 0.3s ease, filter 0.3s ease;
+    border:2px solid white;
+}
+
+/* SAME COLOR FOR ALL CARDS */
+.t1,.t2,.t3,.t4,.t5,.t6{
+    background: linear-gradient(135deg,#2D1E2F,#4E2A4F);
+}
+
+/* Hover Glow */
+.card:hover{
+    filter:brightness(1.1);
+    box-shadow:0 0 28px rgba(255,255,255,0.35);
+}
+
+.card h2{
+    text-align:center;
+    margin-bottom:12px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.expand-text{
+    text-align:center;
+    font-size:13px;
+    opacity:0.8;
+    margin-top:-8px;
+    margin-bottom:6px;
+}
+
+/* IFRAME */
+iframe{
+    width:100%;
+    height:420px;
+    border:none;
+    border-radius:16px;
+    background:white;
+}
+
+/* MODAL */
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.modal-content{
+width:900px;      /* fixed width */
+height:500px;     /* fixed height */
+background:white;
+border-radius:12px;
+padding:15px;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.modal-content iframe{
+width:100%;
+height:100%;
+border:none;
+border-radius:10px;
+}
+
+
+
+.close-btn{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+    color:black;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+<div class="header">
+  <div class="header-inner">
+
+    <div class="google-logo">
+      <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+
+    <div class="title">
+      Google Play Store Reviews Analytics
+    </div>
+
+    <div class="play">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container">
+
+<div class="card t1" onclick="openModal('task1.html')">
+<h2>Task 1 – Ratings vs Reviews</h2>
+<p class="expand-text">View Analysis</p>
+<iframe src="task1.html"></iframe>
+</div>
+
+<div class="card t2" onclick="openModal('task2.html')">
+<h2>Task 2 – Category Analysis</h2>
+<p class="expand-text">View Analysis</p>
+<iframe src="task2.html"></iframe>
+</div>
+
+<div class="card t3" onclick="openModal('task3.html')">
+<h2>Task 3 – Sentiment Insights</h2>
+<p class="expand-text">View Analysis</p>
+<iframe src="task3.html"></iframe>
+</div>
+
+<div class="card t4" onclick="openModal('task4.html')">
+<h2>Task 4 – Installs Distribution</h2>
+<p class="expand-text">View Analysis</p>
+<iframe src="task4.html"></iframe>
+</div>
+
+<div class="card t5" onclick="openModal('task5.html')">
+<h2>Task 5 – Bubble Chart</h2>
+<p class="expand-text">View Analysis</p>
+<iframe src="task5.html"></iframe>
+</div>
+
+<div class="card t6" onclick="openModal('task6.html')">
+<h2>Task 6 – Time Series Trend</h2>
+<p class="expand-text">View Analysis</p>
+<iframe src="task6.html"></iframe>
+</div>
+
+</div>
+
+
+<div id="modal" class="modal" onclick="closeModal()">
+<div class="modal-content" onclick="event.stopPropagation()">
+<span class="close-btn" onclick="closeModal()">✖</span>
+<iframe id="modalFrame"></iframe>
+</div>
+</div>
+
+<script>
+
+function openModal(src){
+    document.getElementById("modalFrame").src = src;
+    document.getElementById("modal").style.display="block";
+}
+
+function closeModal(){
+    document.getElementById("modal").style.display="none";
+    document.getElementById("modalFrame").src="";
+}
+
+document.addEventListener("keydown",function(event){
+    if(event.key==="Escape"){
+        closeModal();
+    }
+});
+
+</script>
+
+</body>
+</html>
